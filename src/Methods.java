@@ -1,4 +1,5 @@
-class Methods {
+public class Methods {
+    String variable = "Teste";
     // public - can be acessed by other classes
     // void - the type of the return of the function, no return in this case
     public void printSum(float number, float number2) {
@@ -18,5 +19,9 @@ class Methods {
     // Very folder in Java it's a package.
     protected void print() {
         System.out.println("sss");
+    }
+
+    public void printProperty() {
+        System.out.println(this.variable);
     }
 }

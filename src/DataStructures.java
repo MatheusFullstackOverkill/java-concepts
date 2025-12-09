@@ -1,3 +1,3 @@
-class DataStructures {
+public class DataStructures {
     
 }

@@ -1,3 +1,3 @@
-class Loops {
+public class Loops {
     
 }
