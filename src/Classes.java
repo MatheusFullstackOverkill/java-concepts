@@ -1,5 +1,10 @@
-public class Methods {
+// each Java file can only have one class, and it shall have the name of the file
+// classes can only be accessed by other packages if they are createad as "public"
+public class Classes {
+    // classes can have properties
     String variable = "Teste";
+
+    // class can have methods
     // public - can be acessed by other classes
     // void - the type of the return of the function, no return in this case
     public void printSum(float number, float number2) {

@@ -2,15 +2,20 @@ package oop;
 
 import java.util.HashMap;
 
-class Character {
-    String name;
+public class Character {
+    // can be accessed outside of class
+    public String name;
+    // cannot be accessed outside of class
     String race;
-    HashMap<String, String> raceOrigins = new HashMap<>() {{
+    public HashMap<String, String> raceOrigins = new HashMap<>() {{
         put("human", "Middle Earth");
         put("elf", "Cuiviénen");
         put("dwarf", "a rock");
+        put("hobbit", "Shire");
+        put("stari", "Amam");
     }};
 
+    // Constructor
     public Character(String name, String race) {
         this.name = name;
         this.race = race;
