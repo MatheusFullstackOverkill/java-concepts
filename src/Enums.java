@@ -1,4 +1,4 @@
-// an enum is an special class that holds a group of constants (variables that cannot be changed)
+// An enum is an special class that holds a group of constants (variables that cannot be changed).
 public class Enums {
     enum UserLevel {
         JUNIR,

@@ -2,13 +2,21 @@ import oop.*;
 
 public class App {
     public static void main(String[] args) {
-        System.out.println("I'm the greatest developer in the world!");
+        System.out.println("Welcome to the begging of my Java Journey");
 
-        OPP.runOOPStudies();
-        Maths.runMathsStudies();
-        Enums.runEnumStudies();
-        Loops.runLoopsStudies();
-        Dates.runDatesStudies();
+        Classes.printRandomText();
+        Variables.runVariablesStudies();
         UserInput.runUserInputStudies();
+        Maths.runMathsStudies();
+        Dates.runDatesStudies();
+        Enums.runEnumStudies();
+        ConditionalStatements.runConditionalStatementsStudies();
+        Arrays.runArraysStudies();
+        Loops.runLoopsStudies();
+        DataStructures.runDataStructuresStudies();
+        Generics.runGenericsStudies();
+        ErrorHandling.runErrorHandlingStudies();
+        Annotations.runAnnotationsStudies();
+        OPP.runOOPStudies();
     }
 }

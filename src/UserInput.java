@@ -13,7 +13,7 @@ public class UserInput {
             System.out.println("Age");
             // nextInt reads the input of the user as an integer,
             // if the user inputs a diferent type of data, it will emit an error,
-            // the same logic is applied to other "next" methods, there's one for every primitive type
+            // the same logic is applied to other "next" methods, there's one for every primitive type.
             Integer age = scannerObject.nextInt();
 
             System.out.println("Salary");
@@ -32,7 +32,7 @@ public class UserInput {
             System.out.println("Details: " + e.toString());
         };
 
-        // the scanner should be closed after it's usage
+        // The scanner should be closed after it's usage.
         scannerObject.close();
     }
 }

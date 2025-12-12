@@ -6,21 +6,21 @@ import java.time.format.DateTimeFormatter;
 
 public class Dates {
     public static void runDatesStudies() {
-        // main date classes
+        // Main date classes
 
-        // LocalDate - Represents a date (year, month, day (yyyy-MM-dd))
+        // LocalDate - Represents a date (year, month, day (yyyy-MM-dd)).
         LocalDate date = LocalDate.now();
 
-        // LocalTime - Represents a time (hour, minute, second and nanoseconds (HH-mm-ss-ns))
+        // LocalTime - Represents a time (hour, minute, second and nanoseconds (HH-mm-ss-ns)).
         
         LocalTime time = LocalTime.now();
-        // LocalDateTime - Represents both a date and a time
+        // LocalDateTime - Represents both a date and a time.
         LocalDateTime localDateTime = LocalDateTime.now();
 
-        // Get current date time in UTC
+        // Get current date time in UTC.
         Instant UTCDateTime = Instant.now();
 
-        // DateTimeFormatter - Formatter for displaying and parsing date-time objects
+        // DateTimeFormatter - Formatter for displaying and parsing date-time objects.
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
 
         String formattedLocalDateTime = dateTimeFormatter.format(localDateTime);

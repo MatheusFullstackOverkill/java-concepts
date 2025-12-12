@@ -3,7 +3,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 
 public class DataStructures {
-    //ArrayList - it's an resizable array, this different from an normal array,
+    // ArrayList - it's an resizable array, this different from an normal array,
     // you can't just use items[10] in an ArrayList por example;
     public static void runArrayListStudies() {
         ArrayList<String> items = new ArrayList<String>();
@@ -22,7 +22,7 @@ public class DataStructures {
         System.out.println(items2);
     }
 
-    //HashSet - it's an resizable array that does not allow duplicates
+    // HashSet - it's an resizable array that does not allow duplicates.
     public static void runHashSetStudies() {
         HashSet<String> items = new HashSet<String>();
 
@@ -34,7 +34,7 @@ public class DataStructures {
         System.out.println(items);
     };
 
-    //HashMap - it's an map of key-value items
+    // HashMap - it's an map of key-value items.
     public static void runHashMapStudies () {
         HashMap<String, String> items = new HashMap<String, String>();
         items.put("name", "Matheus");
@@ -43,5 +43,11 @@ public class DataStructures {
 
         System.out.print("HashMap: \n");
         System.out.print(items);
+    }
+
+    public static void runDataStructuresStudies() {
+        runArrayListStudies();
+        runHashSetStudies();
+        runHashMapStudies();
     }
 }

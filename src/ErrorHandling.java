@@ -9,7 +9,7 @@ public class ErrorHandling {
         };
 
         try {
-            throw new Error("Forced error");
+            throw new Exception("Forced error");
         } catch(Exception e) {
             System.out.println(e);
         } finally {
