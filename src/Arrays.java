@@ -1,5 +1,5 @@
 public class Arrays {
-    public static void runArraysStudies() {
+    public static void main() {
         // Old way of creating an array.
         String[] itemsOldWay = new String[] {"Item 1", "Item 2", "Item 3"};
         // New way of creating an array.

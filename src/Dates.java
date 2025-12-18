@@ -5,7 +5,7 @@ import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
 public class Dates {
-    public static void runDatesStudies() {
+    public static void main() {
         // Main date classes
 
         // LocalDate - Represents a date (year, month, day (yyyy-MM-dd)).

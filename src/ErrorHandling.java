@@ -1,5 +1,5 @@
 public class ErrorHandling {
-    public static void runErrorHandlingStudies() {
+    public static void main() {
         try {
             String[] items = {"Item 1"};
 

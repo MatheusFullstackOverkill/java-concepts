@@ -1,5 +1,5 @@
 public class Variables {
-    public static void runVariablesStudies() {
+    public static void main() {
         // When you declare a variable, like everything in Java, you have to exclicity tell it's type,
         // and you cannot change a variable's value with another type, without changing the variable's type first.
 
@@ -29,6 +29,7 @@ public class Variables {
         Boolean variable = true;
         // Float float = 122.121;
 
+
         // Type casting
 
         // Implicit type casting
@@ -57,9 +58,9 @@ public class Variables {
         boolean2 = true;
         // Now the print will work because the variable was defined.
         System.out.println(boolean2);
-
         // But you can have null variables.
         Boolean boolean3 = null;
+
 
         // IMPORTANT: remember that primitive type holds less space in memory than non primitive types
         // so be carefull when creating variables with non primitive type unnecessarilly, using more memory space.
@@ -67,6 +68,7 @@ public class Variables {
         // - If a variable will not be changed, then maybe it's better to use primitive types.
         // - Analyse the data that will be stored in the database and prepare their correspondant variables in the code
         // accordingly, for example, if you know that an number field won't store a huge number, don't use long type.
+
 
         // Other way to declare variables in Java, it's to use "var", in this case, Java will infer the variable's type.
         var inferedString = "My text";

@@ -1,5 +1,5 @@
 public class ConditionalStatements {
-    public static void runConditionalStatementsStudies() {
+    public static void main() {
         Boolean variable = true;
         Boolean variable2;
         Boolean variable3 = null;

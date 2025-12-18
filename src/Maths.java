@@ -1,5 +1,5 @@
 public class Maths {
-    public static void runMathsStudies() {
+    public static void main() {
         // Find the highest number.
         Double result = Math.max(1.0, 2.0);
         System.out.println("The highest number: " + result);

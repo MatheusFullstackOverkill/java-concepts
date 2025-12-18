@@ -13,7 +13,7 @@ class Box<T> {
 }
 
 public class Generics {
-    public static void runGenericsStudies() {
+    public static void main() {
         Box<String> box = new Box<String>();
 
         box.value = "Makita";

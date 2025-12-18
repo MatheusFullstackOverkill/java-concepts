@@ -10,7 +10,7 @@ public class Warrior extends Istari implements LivingBeing {
     // Example of Encapsulation.
     // All the properties of classes should not be directly accessed from outside the class,
     // this is to garantee security of the system.
-    // To access or change a class properties, it's recomend to use Getters and Setters, as seen bellow.
+    // To access or change a class properties, it's recomended to use Getters and Setters, as seen bellow.
     private String name;
     private String weapon;
 
@@ -19,7 +19,7 @@ public class Warrior extends Istari implements LivingBeing {
         this.weapon = weapon;
     };
 
-    // Getter.
+    // Getter
     public String getName() {
         return this.name;
     };
@@ -28,7 +28,7 @@ public class Warrior extends Istari implements LivingBeing {
         return this.weapon;
     };
 
-    // Setter.
+    // Setter
     public void setName(String name) {
         this.name = name;
     };

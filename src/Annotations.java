@@ -18,7 +18,7 @@ class Wizard extends Warrior {
 }
 
 public class Annotations {
-    public static void runAnnotationsStudies() {
+    public static void main() {
         Wizard wizard = new Wizard();
 
         wizard.attack();

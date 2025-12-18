@@ -1,7 +1,7 @@
 import oop.classes.Character;
 
 public class Loops {
-    public static void runLoopsStudies() {
+    public static void main() {
         Character[] characters = { 
             new Character("Bilbo", "Hobbit"),
             new Character("Gandalf", "Stari"),

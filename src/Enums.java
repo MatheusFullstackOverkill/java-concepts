@@ -11,7 +11,7 @@ public class Enums {
         INACTIVE
     }
 
-    public static void runEnumStudies() {
+    public static void main() {
         UserLevel userLevel = UserLevel.SENIOR;
         UserStatus userStatus = UserStatus.ACTIVE;
 

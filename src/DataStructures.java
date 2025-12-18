@@ -45,7 +45,7 @@ public class DataStructures {
         System.out.print(items);
     }
 
-    public static void runDataStructuresStudies() {
+    public static void main() {
         runArrayListStudies();
         runHashSetStudies();
         runHashMapStudies();

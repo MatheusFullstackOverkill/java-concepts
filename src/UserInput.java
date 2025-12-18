@@ -2,7 +2,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class UserInput {
-    public static void runUserInputStudies() {
+    public static void main() {
         Scanner scannerObject = new Scanner(System.in);
         
         try {
