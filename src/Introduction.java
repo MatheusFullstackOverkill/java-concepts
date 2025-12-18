@@ -4,6 +4,10 @@ public class Introduction {
     // It's a high level, object oriented programing language that can be ran anywhere, because it compiles the code and
     // runs it in an virtual machine (JVM), in any OS.
     // It required an JRE and JVM to work.
+    // When you compile an C code for example, it builds it code into "machine code", a build for the used OS and it's configurations,
+    // that your machine reads. If you try to run it an diferent system, it's will not work.
+    // But when you build Java code, it generates an byte code that the JVM reads, not the machine itself, so you can be in any system with the JDK installed,
+    // and your Java code will work.
 
     // About JDK - Java Development Kit
     // It's a cross-plataform software development kit that provides tools and libraries

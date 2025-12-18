@@ -1,4 +1,4 @@
-import oop.Character;
+import oop.classes.Character;
 
 public class Loops {
     public static void runLoopsStudies() {
@@ -33,6 +33,10 @@ public class Loops {
             if (characters[i].name == "Gandalf") {
                 break;
             };
+        };
+
+        for(Character character: characters) {
+            System.out.println(character);
         };
     }
 }

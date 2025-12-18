@@ -1,5 +1,8 @@
 public class Variables {
     public static void runVariablesStudies() {
+        // When you declare a variable, like everything in Java, you have to exclicity tell it's type,
+        // and you cannot change a variable's value with another type, without changing the variable's type first.
+
         // Primitives types -
         // they are types of the languange itself;
         // start with an lowercase letter;
@@ -8,10 +11,10 @@ public class Variables {
         byte byteVar = 0;
         short shorVar = 0;
         int intVar = 0;
-        long longVar = 0;
+        long longVar = 1000L;
         double doubleVar = 1.0;
         float floatVar = 1.0f;
-        // char - it's an string of only one character
+        // char - it's an string of only one character, and it uses single quotes.
         char charVar = 'a';
         boolean booleanVar = true;
 
@@ -29,12 +32,23 @@ public class Variables {
         // Type casting
 
         // Implicit type casting
-        Integer intVariable = Integer.parseInt("1");
-        String textVatiable = intVariable + "";
+        int initialIntVariable = 0;
+        String textVatiable = initialIntVariable + "";
 
         // Explicit type casting
+        double doubleVariable = 0;
+        int intFromDoubleVariable = (int) doubleVariable;
+
         // If the string is in decimal format, ex: 1.5, it will throw an error.
         Integer newIntVariable = Integer.parseInt(textVatiable);
+        Integer intVariable = Integer.parseInt("1");
+        // So in Java, there are types and simply can't be transformed into others,
+        // in these cases you have to think up a logic to change them, for example:
+        // I can't change "myText" to an int, so I need to change to an Double, and them to an int.  
+        String myText = "1.12";
+        Double myTextDouble = Double.parseDouble(myText);
+        Integer myTextInt = myTextDouble.intValue();
+
 
         // In java you can't have undefined variables!
         // Even if you create an undefined variable, you have to set it's value before use.
@@ -53,6 +67,13 @@ public class Variables {
         // - If a variable will not be changed, then maybe it's better to use primitive types.
         // - Analyse the data that will be stored in the database and prepare their correspondant variables in the code
         // accordingly, for example, if you know that an number field won't store a huge number, don't use long type.
+
+        // Other way to declare variables in Java, it's to use "var", in this case, Java will infer the variable's type.
+        var inferedString = "My text";
+        var inferedNumber = 123;
+
+        System.out.println(inferedString);
+        System.out.println(inferedNumber);
     };
 }
 

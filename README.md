@@ -1,6 +1,6 @@
-## Getting Started
+## About Project
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+The purpose of this project it's to learn all of Java's main concepts
 
 ## Folder Structure
 
@@ -19,35 +19,52 @@ The `JAVA PROJECTS` view allows you to manage your dependencies. More details ca
 
 ## Commands
 Compile project - Required to run project
+```console
 javac -d bin -sourcepath src src/App.java
+```
 
 Run compiled project
+```console
 java -classpath bin App
+```
 
 The "-sourcepath" and "-classpath" params are required if you're not in the folder of the files which you want to access.
-If you are on the /src folder, you can just run:
+If you are on the `src` folder, you can just run:
+```console
 javac App.java
+```
 
-If you are on the /bin folder, you can just run:
+If you are on the `bin` folder, you can just run:
+```console
 java App
+```
 
 ## All the concepts aborded in this project
 
-Classes
-Methods
-Variables
-Primitive Types
-Non Primitive Types
-Type Casting
-User Input
-Methods
-Packages
-Conditional Statements
-Dates
-Data Structures
-Loop
-Error Handling
-Lambda
-Database Integration
-Compilate manually from terminal
-Run compilated code from terminal
+- Introduction of Java
+- Classes
+- Methods
+- Variables
+- UserInput
+- Arrays
+- Collections
+- DataStructures
+- ConditionalStatements
+- ErrorHandling
+- Generics
+- Loops
+- Maths
+- Dates
+- Enums
+- Annotations
+- Async
+- DatabaseIntegrations
+- Files
+- Lambda
+- Records
+- Sorting
+- Stream
+- StringBuilder
+- OOP
+- Compilate manually from terminal
+- Run compilated code from terminal
