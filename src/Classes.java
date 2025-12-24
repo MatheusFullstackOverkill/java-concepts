@@ -14,7 +14,9 @@
 // Access modifiers in the context of classes:
 // public - Can be acessed by other packages.
 // private - Can't be accesed by other packages.
-// protected - Can only be accessed by current package.    
+// protected - Can only be accessed by current package.
+// If a class doesn't have an access modifier, it is considered as "package protected",
+// meaning that it can only be accessed in it's current package.
 public class Classes {
     // Class can have properties/attributes and methods.
 
@@ -22,7 +24,9 @@ public class Classes {
     // public - Can be acessed by other packages.
     // private - Can't be accesed by other packages.
     // protected - Can only be accessed by current package. 
-
+    // If an attribute or method doesn't have an access modifier, it is considered as "package protected",
+    // meaning that it can only be accessed in it's current package, but not by subclasses!
+    // So if you extend a class with an package protected attribure, the subclass can't access it.
 
     // Atributes
 

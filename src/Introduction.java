@@ -23,4 +23,7 @@ public class Introduction {
     // JVM (Java Virtual Machine) - It's java's virtual machine used to run java code;
 
     // Reference: https://www.youtube.com/watch?v=ylaEICFC4pc
+    public static void main() {
+        System.out.println("Read the comments of this class to understand about Java itself and how it works");
+    }
 }

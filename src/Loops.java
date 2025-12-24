@@ -35,6 +35,7 @@ public class Loops {
             };
         };
 
+        // An simplified for loop.
         for(Character character: characters) {
             System.out.println(character);
         };

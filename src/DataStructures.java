@@ -1,7 +1,12 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 
+
+// Data Structures are classes, provided mainly from the java.utils package,
+// that implement interfaces to treat groups of data.
+// They bellong the Collections Framework.
 public class DataStructures {
     // ArrayList - it's an resizable array, this different from an normal array,
     // you can't just use items[10] in an ArrayList por example;
@@ -17,9 +22,22 @@ public class DataStructures {
             add("Item 2");
         }};
 
-        System.out.println("ArrayLists:");
+        // ArrayList implements the List interface, so you can create an
+        // ArrayList and type it as a List. But in case, you cannot access
+        // all the extra methods that the ArrayList class has, only the
+        // methods from the List interface.
+
+        // The same logic can be applied to all the classes from the
+        // Collections Framework, or any class that implements an interface:
+        // You can type the instantiation as the interface, but you won't be
+        // abble to access all the extra methods from the class.
+        List<String> simpleList = new ArrayList<String>();
+        simpleList.add("Item 1");
+
+        System.out.println("Lists:");
         System.out.println(items);
         System.out.println(items2);
+        System.out.println(simpleList);
     }
 
     // HashSet - it's an resizable array that does not allow duplicates.

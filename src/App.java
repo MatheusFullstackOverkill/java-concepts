@@ -7,6 +7,8 @@ public class App {
     public static void main(String[] args) {
         System.out.println("Welcome to the begging of my Java Journey");
 
+        Introduction.main();
+        GarbageCollector.main();
         Classes.main();
         Variables.main();
         UserInput.main();
@@ -14,13 +16,19 @@ public class App {
         Dates.main();
         Enums.main();
         ConditionalStatements.main();
+        ErrorHandling.main();
         Arrays.main();
         Loops.main();
         DataStructures.main();
-        Generics.main();
-        ErrorHandling.main();
         Annotations.main();
         StringBuilders.main();
+        Generics.main();
         OOP.main();
+        Records.main();
+        Lambda.main();
+        StreamAPI.main();
+        DatabaseIntegrations.main();
+        Dependencies.main();
+        Files.main();
     }
 }
