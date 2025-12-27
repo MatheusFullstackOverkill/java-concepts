@@ -3,7 +3,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Files {
+public class FileHandling {
     private static void read() {
         File usersFile = new File("res/users.csv");
 

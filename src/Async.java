@@ -1,5 +1,5 @@
 public class Async {
-    public static void runAsyncStudies() {
+    public static void main() {
         
     }
 }

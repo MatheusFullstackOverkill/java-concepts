@@ -8,35 +8,25 @@ The workspace contains two folders by default, where:
 
 - `src`: the folder to maintain sources
 - `lib`: the folder to maintain dependencies
+- `bin`: the folder output of the generated compiled files
+- `migrations`: the folder to maintain te .sql files of the database
+- `res`: the folder to maintain the resources, the files used by the program
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Run project steps
+- Copy the `.env.example` file to an `.env` file and set the environment variables
+- Run the following commands 
 
 ## Commands
+### On the root folder:
+
 Compile project - Required to run project
 ```console
-javac -d bin -sourcepath src src/App.java
+javac -d bin -classpath src:lib/HikariCP-5.0.1.jar:lib/postgresql-42.7.8.jar:lib/slf4j-api-2.0.7.jar src/App.java
 ```
 
 Run compiled project
 ```console
-java -classpath bin App
-```
-
-The "-sourcepath" and "-classpath" params are required if you're not in the folder of the files which you want to access.
-If you are on the `src` folder, you can just run:
-```console
-javac App.java
-```
-
-If you are on the `bin` folder, you can just run:
-```console
-java App
+java -classpath bin:lib/HikariCP-5.0.1.jar:lib/postgresql-42.7.8.jar:lib/slf4j-api-2.0.7.jar App
 ```
 
 ## All the concepts aborded in this project
@@ -45,6 +35,7 @@ java App
 - Classes
 - Methods
 - Variables
+- StringBuilder
 - UserInput
 - Arrays
 - Collections
@@ -57,14 +48,26 @@ java App
 - Dates
 - Enums
 - Annotations
-- Async
 - DatabaseIntegrations
-- Files
-- Lambda
 - Records
-- Sorting
-- Stream
-- StringBuilder
+- Lambda
+- Stream API
+- Files
 - OOP
+    - Encapsulation
+    - Abstrations
+    - Inheritance
+    - Polimorphism
+- Garbage Collector
+- Dependencies
 - Compilate manually from terminal
 - Run compilated code from terminal
+- Environment Variables
+
+## Other topics not included here but mapped for future studies
+
+- HTTP Requests
+- CompletableFuture
+- I/O Streams to handle binary data (like images, audio, PDFs)
+
+#### Almost all the contents of my files were writen by myself, I tried to explain the concepts in my own word to really understant them.

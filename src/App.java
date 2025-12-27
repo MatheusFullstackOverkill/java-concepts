@@ -8,7 +8,6 @@ public class App {
         System.out.println("Welcome to the begging of my Java Journey");
 
         Introduction.main();
-        GarbageCollector.main();
         Classes.main();
         Variables.main();
         UserInput.main();
@@ -29,6 +28,8 @@ public class App {
         StreamAPI.main();
         DatabaseIntegrations.main();
         Dependencies.main();
-        Files.main();
+        GarbageCollector.main();
+        FileHandling.main();
+        Threads.main();
     }
 }

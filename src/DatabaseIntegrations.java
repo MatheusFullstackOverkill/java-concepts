@@ -1,5 +1,6 @@
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.Properties;
 
 import com.zaxxer.hikari.HikariDataSource;
 
@@ -45,6 +46,11 @@ record User(
 ) {}
 
 public class DatabaseIntegrations {
+    // A method from the abstract class EnvironmentVariables to load the .env file
+    private static Properties environmentVariables = EnvironmentVariables.setEnvironmentVariables();
+
+    // The 2 main ways to connect with a database in JDBC:
+
     // Not recomended to large applications
     // The following methods it's configured to return an Connection type,
     // but it can return an SQLException.
@@ -64,9 +70,10 @@ public class DatabaseIntegrations {
         // Hikari uses the dependency SLF4J, that's why it's
         // all installed in the /lib folder.
         HikariDataSource ds = new HikariDataSource();
-        ds.setJdbcUrl("jdbc:postgresql://localhost/socialmedia");
-        ds.setUsername("postgres");
-        ds.setPassword("doctorwho3210");
+
+        ds.setJdbcUrl(environmentVariables.get("DATABASE_URL").toString());
+        ds.setUsername(environmentVariables.get("DATABASE_USER").toString());
+        ds.setPassword(environmentVariables.get("DATABASE_PASSWORD").toString());
 
         return ds;
     }
@@ -93,10 +100,6 @@ public class DatabaseIntegrations {
             ArrayList<User> users = new ArrayList<User>();
 
             while (result.next()) {
-                // OffsetDateTime createdAtWithOffset = result.getObject("created_at", OffsetDateTime.class);
-                // String createdAtUTC = createdAtWithOffset.withOffsetSameInstant(ZoneOffset.UTC).toString();
-                // System.out.println(result.getString("created_at"));
-
                 User user = new User(
                     result.getInt("user_id"),
                     result.getString("first_name"),
@@ -125,6 +128,7 @@ public class DatabaseIntegrations {
                     SELECT * FROM "user" WHERE email = ?        
                 """
             );
+
             // The index of the parameter on the SQL string, it starts with 1,
             // followed by the value of the parameter. 
             preparedStatement.setString(1, "matheus@gmail.com");

@@ -11,6 +11,11 @@ import java.util.stream.Collectors;
 
 // An interface with a single method it's called a Functional Interface,
 // most used for Lambdas.
+// You can and FunctionalInterface Annotation to tell the compiler and
+// other developers that this interface is functional.
+// This annotation with throw an error if you add. another method.
+// This is not an requirement.
+@FunctionalInterface
 interface Calculate {
     public Integer calculate(Integer number1, Integer number2);
 }
