@@ -5,12 +5,17 @@
 // but you cannot change the initial data,
 // after you run your operations on it, than you can save the result
 // in the same variable, depending of the type of the initial value, or a another variablea.  
+// Reference: https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+
+record Person(String name, Integer id, LocalDateTime createdAt) {}
 
 public class StreamAPI {
     public static void main() {
@@ -24,6 +29,12 @@ public class StreamAPI {
             add(1);
             add(2);
             add(3);
+        }};
+
+        HashSet<Person> persons = new HashSet<Person>() {{
+            add(new Person("Matheus", 12, LocalDateTime.of(2000, 1, 12, 12, 12, 12)));
+            add(new Person("Augusto", 34, LocalDateTime.of(2001, 1, 12, 12, 12, 12)));
+            add(new Person("Stephen", 1, LocalDateTime.of(1990, 1, 12, 12, 12, 12)));
         }};
 
         // To transform a collection in a stream,
@@ -82,15 +93,26 @@ public class StreamAPI {
         // Reducing the items to an single item of the type of the collection
         .reduce(0, (a, b) -> a + b);
 
-        // Other Stream methods:
-        // flatMap()
-        // distinct()
-        // peek()
-        // sorted()
+        List<Person> filteredPersons =
+        persons.stream()
+        .filter(x -> x.name().toLowerCase().contains("ma"))
+        .collect(Collectors.toList());
+
+        ArrayList<Person> filtePersonsArrayList =
+        new ArrayList<Person>(filteredPersons);
+
+        // Ordering list by most recent date
+        List<Person> orderedPersonsByCreatedAt =
+        persons.stream()
+        .sorted((a, b) -> a.createdAt().compareTo(b.createdAt()))
+        .collect(Collectors.toList())
+        .reversed();
 
         System.out.println(newList);
         System.out.println(newList2);
         System.out.println(listString);
         System.out.println(numberSum);
+        System.out.println(filtePersonsArrayList);
+        System.out.println(orderedPersonsByCreatedAt);
     }
 }

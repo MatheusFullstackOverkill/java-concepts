@@ -40,10 +40,12 @@ public class Variables {
         double doubleVariable = 0;
         int intFromDoubleVariable = (int) doubleVariable;
 
+        Integer intVariable = Integer.parseInt("1");
+
         // If the string is in decimal format, ex: 1.5, it will throw an error.
         Integer newIntVariable = Integer.parseInt(textVatiable);
-        Integer intVariable = Integer.parseInt("1");
-        // So in Java, there are types and simply can't be transformed into others,
+
+        // So in Java, there are types that simply can't be transformed into others,
         // in these cases you have to think up a logic to change them, for example:
         // I can't change "myText" to an int, so I need to change to an Double, and them to an int.  
         String myText = "1.12";
@@ -55,9 +57,12 @@ public class Variables {
         // Even if you create an undefined variable, you have to set it's value before use.
         Boolean boolean2;
         // If you run System.out.println(variable2) now, it will throw an error;
+
         boolean2 = true;
         // Now the print will work because the variable was defined.
+
         System.out.println(boolean2);
+
         // But you can have null variables.
         Boolean boolean3 = null;
 

@@ -13,26 +13,26 @@
 
 // Access modifiers in the context of classes:
 // public - Can be acessed by other packages.
-// private - Can't be accesed by other packages.
-// protected - Can only be accessed by current package.
 // If a class doesn't have an access modifier, it is considered as "package protected",
 // meaning that it can only be accessed in it's current package.
 public class Classes {
     // Class can have properties/attributes and methods.
 
-    // Access modifiers in the context of attributes and methods:  
+    // Access modifiers in the context of attributes, methods and constructors:  
     // public - Can be acessed by other packages.
-    // private - Can't be accesed by other packages.
-    // protected - Can only be accessed by current package. 
+    // private - Can't be accesed outside of current class.
+    // protected - Can only be accessed by current package AND subclasses.
     // If an attribute or method doesn't have an access modifier, it is considered as "package protected",
-    // meaning that it can only be accessed in it's current package, but not by subclasses!
+    // meaning that it can only be accessed in it's current package, but NOT by subclasses!
     // So if you extend a class with an package protected attribure, the subclass can't access it.
 
     // Atributes
 
     String variable = "Test";
+
     // it's NOT recomend to use "public" in properties/attributes, only in methods.
     public String publicText = "";
+
     // It's recomended to use "private" for properties/attributes, to keep the class functionally secured.
     // It's ideal to set attributes as private and only access them externally by Getters and Setters, as shown bellow.
     private String privateText = "";

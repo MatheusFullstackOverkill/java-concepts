@@ -7,10 +7,12 @@ public class UserInput {
         
         try {
             System.out.println("Full name");
+
             // nextLine reads the string input of the user
             String fullname = scannerObject.nextLine();
 
             System.out.println("Age");
+
             // nextInt reads the input of the user as an integer,
             // if the user inputs a diferent type of data, it will emit an error,
             // the same logic is applied to other "next" methods, there's one for every primitive type.
